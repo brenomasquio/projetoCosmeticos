@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../static/estilo2.css">
+<title>Pagina de compras</title>
+</head>
+<body>
+<header class="header">
+    <div class="cab">
+        <div class="cb2">
+            <img class="logo" src="../static/Logo1.png">
+        </div>
+
+        <div class="cb1">
+            <img class="logo_picpay" src="../static/PicPay.png">
+            <span class="text-picpay">Pic Pay</span>
+        </div>
+
+
+    </div>
+</header>
+
+<div class="container">
+    <div class="secoes">
+        <section>
+            <div class="branco">
+                <div>
+                    <img class="img212" src="../static/212.png"/>
+                </div>
+                <div>
+                    <div class="information">
+                        <div class="estrelas">
+                            <img class="estrela"  src="../static/estrela.png"> <img class="estrela" src="../static/estrela.png">
+                            <img class="estrela" src="../static/estrela.png"> <img class="estrela" src="../static/estrela.png">
+                            <img class="estrela" src="../static/estrela.png">
+                        </div>
+                        <h2 class="text212">212 VIP</h2>
+                        <p>Rosé Carolina Herrera Eau de Parfum - 80ml</p>
+                        <h2>R$ 692,00</h2>
+                        <h1>Entrar Na Minha Conta:</h1>
+                        <button class="app">Abrir App</button>
+                        <div class="codigo">
+                            <label>Código de segurança (CVV/CVC):</label>
+                            <input class="input">
+                        </div>
+                        <div class="seguranca">
+                            <label>CPF/CNPJ:</label>
+                            <input class="input">
+                        </div>
+                        <div class="Finalizar">
+                            <button class="compra">Finalizar Compra</button>
+                            <button class="frete">Calcular Frete</button>
+                        </div>
+                    </div>
+                    <div class="endereco">
+                        <label class="cidade">Cidade:</label>
+                        <input class="input">
+                        <label class="rua">Rua:</label>
+                        <input class="input">
+                        <label class="numero">Numero Residencial:</label>
+                        <input class="input">
+                        <label class="bairro">Bairro:</label>
+                        <input class="input">
+                        <label class="estado">Estado:</label>
+                        <select class="select">
+                            <option>AC</option> <option>AL</option> <option>AP</option>
+                            <option>AM</option> <option>BA</option> <option>CS</option>
+                            <option>ES</option> <option>GO</option> <option>MA</option>
+                            <option>MT</option> <option>MS</option> <option>MG</option>
+                            <option>MA</option> <option>PB</option> <option>PR</option>
+                            <option>PE</option> <option>PI</option> <option>RJ</option>
+                            <option>RN</option> <option>RS</option> <option>RO</option>
+                            <option>RR</option> <option>SC</option> <option>SP</option>
+                            <option>SE</option> <option>TO</option> <option>DF</option>
+                        </select>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var enderecoDiv = document.querySelector('.endereco');
+                            enderecoDiv.style.display = 'none'; // Garante que a div comece escondida
+
+                            document.querySelector('.frete').addEventListener('click', function() {
+                                if (enderecoDiv.style.display === 'none') {
+                                    enderecoDiv.style.display = 'block';
+                                } else {
+                                    enderecoDiv.style.display = 'none';
+                                }
+                            });
+                        });
+                    </script>
+
+                    <div class="voltar">
+                        <p class="continuar">Continuar Comprando</p>
+                        <img class="seta" src="../static/Seta.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<footer>FOOTER</footer>
+</body>
+</html>
